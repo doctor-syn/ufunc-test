@@ -33,8 +33,8 @@ def configuration(parent_package='', top_path=None):
     config = Configuration('npufunc_directory',
                            parent_package,
                            top_path)
-    # config.add_extension('npufunc', ['src/ufunc.c'], extra_compile_args=["-O3", "-ftree-vectorize", "-mavx2", "-ftree-vectorizer-verbose=5"])
-    config.add_extension('npufunc', ['src/ufunc.c'])
+    config.add_extension('npufunc', ['src/ufunc.c'], extra_compile_args=["-O3", "-ftree-vectorize", "-ffast-math", "-mavx2", "-mavx", "-ftree-vectorizer-verbose=5"])
+    # config.add_extension('npufunc', ['src/ufunc.c'])
 
     return config
 

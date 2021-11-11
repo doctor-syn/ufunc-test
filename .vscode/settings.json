@@ -2,5 +2,6 @@
     "C_Cpp.default.includePath": [
         "/usr/include/python3.8/",
         "/home/andy/.local/lib/python3.8/site-packages/numpy/core/include"
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "Enabled"
 }
